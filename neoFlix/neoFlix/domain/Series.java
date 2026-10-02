@@ -32,12 +32,18 @@ public class Series extends Content{
    public int rating() throws NeoFlixException{
        int r=0;
        int i=0;
-       for(Episode e: episodes){
-           r = r + e.rating();
-           i+=1;
+       if(episodes.size()<=0){
+           throw new NeoFlixException(NeoFlixException.CONTENT_EMPTY);
        }
-       r = r/i;
-       return r;
+       else{
+           for(Episode e: episodes){
+               r = r + e.rating();
+               i+=1;
+            }
+           r = r/i;
+           return r;
+       }
+
    }
     
  

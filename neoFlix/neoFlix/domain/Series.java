@@ -30,7 +30,14 @@ public class Series extends Content{
    */
    @Override
    public int rating() throws NeoFlixException{
-       return 0;
+       int r=0;
+       int i=0;
+       for(Episode e: episodes){
+           r = r + e.rating();
+           i+=1;
+       }
+       r = r/i;
+       return r;
    }
     
  

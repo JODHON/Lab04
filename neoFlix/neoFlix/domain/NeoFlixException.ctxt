@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NeoFlixException
+comment1.params=
+comment1.target=NeoFlixException()
+comment2.params=mensaje
+comment2.target=NeoFlixException(java.lang.String)
+comment3.params=mensaje\ causa
+comment3.target=NeoFlixException(java.lang.String,\ java.lang.Throwable)
+numComments=4
